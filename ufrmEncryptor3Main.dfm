@@ -24,11 +24,10 @@ object frmEncryptor3: TfrmEncryptor3
     Left = 31
     Top = 333
     Width = 40
-    Height = 15
+    Height = 13
     Anchors = [akLeft, akRight, akBottom]
     Caption = '&Result:'
     FocusControl = edtResultStr
-    ExplicitTop = 400
   end
   object Label8: TLabel
     Left = 31
@@ -94,13 +93,12 @@ object frmEncryptor3: TfrmEncryptor3
     Left = 31
     Top = 349
     Width = 445
-    Height = 23
+    Height = 21
     TabStop = False
     Anchors = [akLeft, akRight, akBottom]
     Color = clBtnFace
     ReadOnly = True
     TabOrder = 6
-    ExplicitTop = 416
   end
   object btnCopyLBSymmetricResult: TButton
     Left = 359
@@ -111,7 +109,6 @@ object frmEncryptor3: TfrmEncryptor3
     Caption = '&Copy to Clipboard'
     TabOrder = 7
     OnClick = btnCopyLBSymmetricResultClick
-    ExplicitTop = 440
   end
   object btnEncrypt: TButton
     Left = 93
@@ -155,8 +152,7 @@ object frmEncryptor3: TfrmEncryptor3
       'CBC - Cipher Block Chaining'
       'CFB - Cipher Feedback'
       'CTR - Counter Mode'
-      'ECB - Electronic Code Book'
-      'OFB - Output Feedback')
+      'ECB - Electronic Code Book')
     TabOrder = 1
   end
   object radAESKeySize: TRadioGroup
@@ -181,7 +177,6 @@ object frmEncryptor3: TfrmEncryptor3
     Caption = '&About ...'
     TabOrder = 8
     OnClick = btnAboutClick
-    ExplicitTop = 442
   end
   object edtPassphrase: TEdit
     Left = 31
