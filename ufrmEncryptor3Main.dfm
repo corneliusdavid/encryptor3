@@ -190,14 +190,14 @@ object frmEncryptor3: TfrmEncryptor3
     Caption = 'About this Program'
     ExpandButtonCaption = 'GitHub'
     ExpandedText = 
-      'https://github.com/corneliusdavid/encryptor  https://github.com/' +
-      'corneliusdavid/LockBox-2.08'
+      'https://github.com/corneliusdavid/encryptor https://github.com/c' +
+      'orneliusdavid/encryptor3 https://github.com/TurboPack/LockBox3'
     RadioButtons = <>
     Text = 
       'This program originally started as "Encryptor" and used Turbo Po' +
-      'wer'#39's Lockbox 2.x. Encryptor3 now uses LockBox 3.x, the first ve' +
-      'rsion supported is Delphi 10.1 Berlin but could quite easily be ' +
-      'compiled in earlier versions.'
+      'wer'#39's Lockbox 2.x. Encryptor3 now uses LockBox 3.x. The first ve' +
+      'rsion tested is Delphi 10.1 Berlin but could quite easily be com' +
+      'piled in earlier versions.'
     Left = 392
     Top = 208
   end
