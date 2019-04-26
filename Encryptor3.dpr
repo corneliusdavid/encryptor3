@@ -10,7 +10,7 @@ uses
 
 begin
   Application.Initialize;
-  TStyleManager.TrySetStyle('Auric');
+  TStyleManager.TrySetStyle('Onyx Blue');
   Application.Title := 'The Encryptor!';
   Application.CreateForm(TfrmEncryptor3, frmEncryptor3);
   Application.Run;
