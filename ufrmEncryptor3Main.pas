@@ -125,7 +125,11 @@ var
 begin
   KeyBytes := TEncoding.UTF8.GetBytes(edtPassphrase.Text);
   KeyStream := TBytesStream.Create(KeyBytes);
-  lbCodec.InitFromStream(KeyStream);
+  try
+    lbCodec.InitFromStream(KeyStream);
+  finally
+    KeyStream.Free;
+  end;
 end;
 
 procedure TfrmEncryptor3.radAlgorithmClick(Sender: TObject);
