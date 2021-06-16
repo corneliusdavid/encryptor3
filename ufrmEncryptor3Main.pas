@@ -27,12 +27,14 @@ type
     lblKey: TLabel;
     edtPassphrase: TEdit;
     dlgAESKeySizeErr: TTaskDialog;
+    lblKeyLen: TLabel;
     procedure btnCopyLBSymmetricResultClick(Sender: TObject);
     procedure btnEncryptClick(Sender: TObject);
     procedure btnDecryptClick(Sender: TObject);
     procedure btnAboutClick(Sender: TObject);
     procedure radAlgorithmClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure edtPassphraseChange(Sender: TObject);
   private
     function AESAndKeySizeOK: Boolean;
     procedure CopyToClipboard(EditControl: TEdit);
@@ -57,6 +59,11 @@ begin
   EditControl.SelectAll;
   EditControl.CopyToClipboard;
   EditControl.SelLength := 0;
+end;
+
+procedure TfrmEncryptor3.edtPassphraseChange(Sender: TObject);
+begin
+  lblKeyLen.Caption := 'Key Length: ' + IntToStr(Length(edtPassphrase.Text));
 end;
 
 procedure TfrmEncryptor3.FormCreate(Sender: TObject);

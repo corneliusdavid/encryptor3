@@ -2,7 +2,7 @@ object frmEncryptor3: TfrmEncryptor3
   Left = 307
   Top = 245
   Caption = 'The Encryptor3!'
-  ClientHeight = 413
+  ClientHeight = 424
   ClientWidth = 519
   Color = clBtnFace
   Constraints.MinHeight = 350
@@ -17,12 +17,12 @@ object frmEncryptor3: TfrmEncryptor3
   OnCreate = FormCreate
   DesignSize = (
     519
-    413)
+    424)
   PixelsPerInch = 96
   TextHeight = 13
   object Label4: TLabel
-    Left = 31
-    Top = 333
+    Left = 32
+    Top = 344
     Width = 40
     Height = 13
     Anchors = [akLeft, akRight, akBottom]
@@ -30,7 +30,7 @@ object frmEncryptor3: TfrmEncryptor3
     FocusControl = edtResultStr
   end
   object Label8: TLabel
-    Left = 31
+    Left = 32
     Top = 184
     Width = 39
     Height = 13
@@ -58,24 +58,31 @@ object frmEncryptor3: TfrmEncryptor3
     WordWrap = True
   end
   object lblKey: TLabel
-    Left = 31
+    Left = 32
     Top = 229
     Width = 27
     Height = 13
     Caption = '&Key:'
     FocusControl = edtPassphrase
   end
+  object lblKeyLen: TLabel
+    Left = 32
+    Top = 275
+    Width = 69
+    Height = 13
+    Caption = 'Key Length:'
+  end
   object edtSourceStr: TEdit
-    Left = 31
+    Left = 32
     Top = 200
-    Width = 445
+    Width = 444
     Height = 21
     Anchors = [akLeft, akTop, akRight]
     TabOrder = 3
   end
   object btnDecrypt: TButton
     Left = 315
-    Top = 285
+    Top = 296
     Width = 117
     Height = 35
     Anchors = [akLeft, akRight, akBottom]
@@ -88,11 +95,12 @@ object frmEncryptor3: TfrmEncryptor3
     ParentFont = False
     TabOrder = 5
     OnClick = btnDecryptClick
+    ExplicitTop = 285
   end
   object edtResultStr: TEdit
-    Left = 31
-    Top = 349
-    Width = 445
+    Left = 32
+    Top = 360
+    Width = 444
     Height = 21
     TabStop = False
     Anchors = [akLeft, akRight, akBottom]
@@ -102,17 +110,18 @@ object frmEncryptor3: TfrmEncryptor3
   end
   object btnCopyLBSymmetricResult: TButton
     Left = 359
-    Top = 373
+    Top = 384
     Width = 117
     Height = 27
     Anchors = [akLeft, akRight, akBottom]
     Caption = '&Copy to Clipboard'
     TabOrder = 7
     OnClick = btnCopyLBSymmetricResultClick
+    ExplicitTop = 373
   end
   object btnEncrypt: TButton
     Left = 93
-    Top = 285
+    Top = 296
     Width = 117
     Height = 35
     Anchors = [akLeft, akRight, akBottom]
@@ -125,6 +134,7 @@ object frmEncryptor3: TfrmEncryptor3
     ParentFont = False
     TabOrder = 4
     OnClick = btnEncryptClick
+    ExplicitTop = 285
   end
   object radAlgorithm: TRadioGroup
     Left = 32
@@ -169,8 +179,8 @@ object frmEncryptor3: TfrmEncryptor3
     TabOrder = 2
   end
   object btnAbout: TButton
-    Left = 31
-    Top = 375
+    Left = 32
+    Top = 386
     Width = 83
     Height = 27
     Anchors = [akLeft, akRight, akBottom]
@@ -179,11 +189,12 @@ object frmEncryptor3: TfrmEncryptor3
     OnClick = btnAboutClick
   end
   object edtPassphrase: TEdit
-    Left = 31
+    Left = 32
     Top = 248
     Width = 266
     Height = 21
     TabOrder = 9
+    OnChange = edtPassphraseChange
   end
   object dlgAbout: TTaskDialog
     Buttons = <>
