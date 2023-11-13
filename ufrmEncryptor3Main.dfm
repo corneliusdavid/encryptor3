@@ -11,14 +11,11 @@ object frmEncryptor3: TfrmEncryptor3
   Font.Height = -11
   Font.Name = 'Verdana'
   Font.Style = []
-  OldCreateOrder = False
   Position = poScreenCenter
-  Scaled = False
   OnCreate = FormCreate
   DesignSize = (
     519
     424)
-  PixelsPerInch = 96
   TextHeight = 13
   object Label4: TLabel
     Left = 32
@@ -79,6 +76,7 @@ object frmEncryptor3: TfrmEncryptor3
     Height = 21
     Anchors = [akLeft, akTop, akRight]
     TabOrder = 3
+    ExplicitWidth = 438
   end
   object btnDecrypt: TButton
     Left = 315
@@ -95,7 +93,8 @@ object frmEncryptor3: TfrmEncryptor3
     ParentFont = False
     TabOrder = 5
     OnClick = btnDecryptClick
-    ExplicitTop = 285
+    ExplicitTop = 279
+    ExplicitWidth = 111
   end
   object edtResultStr: TEdit
     Left = 32
@@ -107,6 +106,8 @@ object frmEncryptor3: TfrmEncryptor3
     Color = clBtnFace
     ReadOnly = True
     TabOrder = 6
+    ExplicitTop = 343
+    ExplicitWidth = 438
   end
   object btnCopyLBSymmetricResult: TButton
     Left = 359
@@ -117,7 +118,8 @@ object frmEncryptor3: TfrmEncryptor3
     Caption = '&Copy to Clipboard'
     TabOrder = 7
     OnClick = btnCopyLBSymmetricResultClick
-    ExplicitTop = 373
+    ExplicitTop = 367
+    ExplicitWidth = 111
   end
   object btnEncrypt: TButton
     Left = 93
@@ -134,7 +136,8 @@ object frmEncryptor3: TfrmEncryptor3
     ParentFont = False
     TabOrder = 4
     OnClick = btnEncryptClick
-    ExplicitTop = 285
+    ExplicitTop = 279
+    ExplicitWidth = 111
   end
   object radAlgorithm: TRadioGroup
     Left = 32
@@ -187,6 +190,8 @@ object frmEncryptor3: TfrmEncryptor3
     Caption = '&About ...'
     TabOrder = 8
     OnClick = btnAboutClick
+    ExplicitTop = 369
+    ExplicitWidth = 77
   end
   object edtPassphrase: TEdit
     Left = 32
