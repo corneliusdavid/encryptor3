@@ -1,9 +1,12 @@
 program Encryptor3;
 
+{$R *.dres}
+
 uses
   Vcl.Forms,
   ufrmEncryptor3Main in 'ufrmEncryptor3Main.pas',
-  Vcl.Themes, Vcl.Styles;
+  Vcl.Themes,
+  Vcl.Styles;
 
 {$R *.res}
 
